@@ -69,11 +69,11 @@
         suppl {
             display-name = "move / mouse / num / LED";
             bindings = <
-&to 0       &kp F1           &kp F2           &kp F3           &kp F4          &kp F5             &mmv MOVE_UP     &kp F6     &kp F7           &kp EQUAL        &kp SLASH        &kp ASTERISK  &trans
+&to 0       &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB4   &mkp MB5         &kp EQUAL        &kp SLASH        &kp ASTERISK  &trans
 &bl BL_INC  &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &kp PG_UP  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS     &mt UNDERSCORE MINUS
 &bl BL_DEC  &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_UP       &mmv MOVE_LEFT   &kp PG_DN  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &kp LEFT_BRACKET
 &bl BL_TOG  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &mkp RCLK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER     &kp RIGHT_BRACKET
-&kp C_MUTE  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &mkp MB4        &mkp MB5           &mkp LCLK        &mkp LCLK  &mkp MCLK        &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp PERIOD
+&kp C_MUTE  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans     &trans           &trans           &kp KP_NUMBER_0  &kp PERIOD
             >;
         };
 
