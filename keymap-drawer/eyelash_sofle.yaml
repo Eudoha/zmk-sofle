@@ -133,12 +133,12 @@ layers:
   - {t: LAYER0, h: toggle}
   - F1
   - F2
-  - F3
-  - F4
-  - F5
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - F6
-  - F7
+  - '&mkp MB4'
+  - '&mkp MB5'
   - {t: '=', s: +}
   - {t: /, s: '?'}
   - '*'
@@ -186,12 +186,12 @@ layers:
   - RGB EFF
   - RGB SPD
   - RGB SPI
-  - '&mkp MB4'
-  - {t: '&mkp MB5', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - KP 0
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
   - .
   기존 layer1:
