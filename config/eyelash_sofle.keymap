@@ -44,11 +44,11 @@
 
         layer0 {
             bindings = <
-&mt TILDE ESC            &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5    &kp UP_ARROW     &mt CARET NUMBER_6  &mt AMPERSAND N7  &mt ASTERISK N8      &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BACKSPACE
-&kp TAB                  &kp Q                     &kp W                 &kp E              &kp R                &kp T             &kp DOWN_ARROW   &kp Y               &kp U             &kp I                &kp O                    &kp P                     &kp BSLH
-&mt LEFT_SHIFT CAPSLOCK  &kp A                     &kp S                 &kp D              &kp F                &kp G             &kp LEFT_ARROW   &kp H               &kp J             &kp K                &kp L                    &mt COLON SEMICOLON       &mt RIGHT_SHIFT ENTER
-&kp LCTRL                &kp Z                     &kp X                 &kp C              &kp V                &kp B             &kp RIGHT_ARROW  &kp N               &kp M             &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH        &kp DEL
-&kp C_MUTE               &kp LCTRL                 &kp LEFT_GUI          &kp LEFT_ALT       &kp SPACE            &lt 2 ENTER       &kp ENTER        &lt 1 ENTER         &kp SPACE         &tog 2               &mt LANGUAGE_2 LANG1     &kp DELETE
+&mt TILDE ESC            &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5    &kp UP_ARROW     &mt CARET NUMBER_6  &mt AMPERSAND N7  &mt ASTERISK N8         &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BACKSPACE
+&kp TAB                  &kp Q                     &kp W                 &kp E              &kp R                &kp T             &kp DOWN_ARROW   &kp Y               &kp U             &kp I                   &kp O                    &kp P                     &kp BSLH
+&mt LEFT_SHIFT CAPSLOCK  &kp A                     &kp S                 &kp D              &kp F                &kp G             &kp LEFT_ARROW   &kp H               &kp J             &kp K                   &kp L                    &mt COLON SEMICOLON       &mt RIGHT_SHIFT ENTER
+&kp LCTRL                &kp Z                     &kp X                 &kp C              &kp V                &kp B             &kp RIGHT_ARROW  &kp N               &kp M             &mt LEFT_BRACKET COMMA  &mt RBKT PERIOD          &mt QUESTION SLASH        &kp DEL
+&kp C_MUTE               &kp LCTRL                 &kp LEFT_GUI          &kp LEFT_ALT       &kp SPACE            &lt 2 ENTER       &kp ENTER        &lt 1 ENTER         &kp SPACE         &tog 2                  &mt LANGUAGE_2 LANG1     &kp DELETE
             >;
 
             display-name = "LAYER0";
@@ -56,11 +56,11 @@
 
         BT,Fn {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans  &kp F10  &kp F11  &kp F12  &kp BACKSLASH     &trans
-&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &kp F7   &kp F8   &kp F9   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &kp F4   &kp F5   &kp F6   &kp SEMICOLON     &kp SQT
-&trans  &trans        &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &kp F1   &kp F2   &kp F3   &kp LESS_THAN     &kp GREATER_THAN
-&trans  &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans   &trans   &trans   &kp DOT
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &mmv MOVE_DOWN   &trans  &kp F4  &kp F5  &kp F6  &trans   &kp F12
+&trans  &trans        &trans        &trans        &bt BT_CLR    &bt BT_CLR_ALL    &mmv MOVE_LEFT   &trans  &kp F1  &kp F2  &kp F3  &trans   &trans
+&trans  &out OUT_TOG  &out OUT_BLE  &bootloader   &trans        &trans            &mmv MOVE_RIGHT  &trans  &kp F1  &kp F2  &kp F3  &trans   &trans
+&trans  &trans        &trans        &trans        &trans        &trans            &mkp LCLK        &trans  &trans  &trans  &trans  &kp DOT
             >;
 
             label = "BT / fn / symbol";
@@ -97,6 +97,17 @@
 &kp LEFT_SHIFT  &sk LS(NUMBER_1)  &kp S         &kp D         &kp F      &kp G     &kp LEFT_ARROW   &kp H   &kp J      &kp K      &kp L      &kp SEMI    &kp ENTER
 &kp LCTRL       &kp Z             &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp N   &kp M      &kp COMMA  &kp DOT    &kp FSLH    &kp RIGHT_SHIFT
 &caps_word      &kp LCTRL         &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 3     &kp ENTER        &mo 1   &kp ENTER  &mo 1      &kp LANG1  &kp DELETE
+            >;
+        };
+
+        layer_5 {
+            display-name = "layer_test";
+            bindings = <
+&to 0       &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB4   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &trans
+&trans      &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &kp PG_UP  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS        &mt UNDERSCORE MINUS
+&trans      &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_UP       &mmv MOVE_LEFT   &kp PG_DN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK     &kp LEFT_BRACKET
+&trans      &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &mkp RCLK  &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp PERIOD       &mt ENTER SLASH  &kp RIGHT_BRACKET
+&kp C_MUTE  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans     &trans           &trans           &trans           &trans
             >;
         };
     };
