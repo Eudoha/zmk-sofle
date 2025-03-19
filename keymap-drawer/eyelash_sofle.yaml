@@ -169,7 +169,7 @@ layers:
   - KP 2
   - KP 3
   - '*'
-  - {t: '[', s: '{'}
+  - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
   - RGB BRD
@@ -181,8 +181,8 @@ layers:
   - KP 0
   - KP 0
   - .
-  - {t: /, h: '$$mdi:keyboard-return$$', s: '?'}
-  - {t: ']', s: '}'}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - RGB EFF
   - RGB SPD
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
   move / mouse / num / LED:
   - {t: LAYER0, h: toggle}
   - F1
