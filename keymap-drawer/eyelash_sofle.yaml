@@ -157,7 +157,7 @@ layers:
   - KP 6
   - {t: '-', s: _}
   - {t: '-', h: _, s: _}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB HUI
   - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -170,7 +170,7 @@ layers:
   - KP 3
   - '*'
   - {t: '''', h: '"', s: '"'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB HUD
   - RGB TOG
   - RGB BRD
   - RGB BRI
