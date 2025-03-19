@@ -69,11 +69,11 @@
         Suppl1 {
             display-name = "layer_test";
             bindings = <
-&to 0       &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB5       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &trans
-&trans      &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS        &mt UNDERSCORE MINUS
-&trans      &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_UP       &mmv MOVE_LEFT   &kp PAGE_UP    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK     &kp LEFT_BRACKET
-&trans      &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp PERIOD       &mt ENTER SLASH  &kp RIGHT_BRACKET
-&kp C_MUTE  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans         &trans           &trans           &trans           &trans
+&to 0       &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB5       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS      &trans
+&trans      &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS     &mt UNDERSCORE MINUS
+&trans      &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_UP       &mmv MOVE_LEFT   &kp PAGE_UP    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK  &mt DOUBLE_QUOTES SQT
+&trans      &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp PERIOD       &kp SLASH     &trans
+&kp C_MUTE  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans         &trans           &trans           &trans           &kp EQUAL
             >;
         };
 
