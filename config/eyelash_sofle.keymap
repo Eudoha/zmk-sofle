@@ -66,7 +66,18 @@
             label = "BT / fn / symbol";
         };
 
-        suppl {
+        Suppl1 {
+            display-name = "layer_test";
+            bindings = <
+&to 0       &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB5       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &trans
+&trans      &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS        &mt UNDERSCORE MINUS
+&trans      &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_UP       &mmv MOVE_LEFT   &kp PAGE_UP    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK     &kp LEFT_BRACKET
+&trans      &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp PERIOD       &mt ENTER SLASH  &kp RIGHT_BRACKET
+&kp C_MUTE  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans         &trans           &trans           &trans           &trans
+            >;
+        };
+
+        suppl0 {
             display-name = "move / mouse / num / LED";
             bindings = <
 &to 0       &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB4   &mkp MB5         &kp EQUAL        &kp SLASH        &kp ASTERISK  &trans
@@ -96,18 +107,7 @@
 &kp TAB         &kp Q             &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp Y   &kp U      &kp I      &kp O      &kp P       &kp BSLH
 &kp LEFT_SHIFT  &sk LS(NUMBER_1)  &kp S         &kp D         &kp F      &kp G     &kp LEFT_ARROW   &kp H   &kp J      &kp K      &kp L      &kp SEMI    &kp ENTER
 &kp LCTRL       &kp Z             &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp N   &kp M      &kp COMMA  &kp DOT    &kp FSLH    &kp RIGHT_SHIFT
-&caps_word      &kp LCTRL         &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 3     &kp ENTER        &mo 1   &kp ENTER  &mo 1      &kp LANG1  &kp DELETE
-            >;
-        };
-
-        layer_5 {
-            display-name = "layer_test";
-            bindings = <
-&to 0       &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB4   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &trans
-&trans      &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &kp PG_UP  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS        &mt UNDERSCORE MINUS
-&trans      &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_UP       &mmv MOVE_LEFT   &kp PG_DN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK     &kp LEFT_BRACKET
-&trans      &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &mkp RCLK  &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp PERIOD       &mt ENTER SLASH  &kp RIGHT_BRACKET
-&kp C_MUTE  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans     &trans           &trans           &trans           &trans
+&caps_word      &kp LCTRL         &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 4     &kp ENTER        &mo 1   &kp ENTER  &mo 1      &kp LANG1  &kp DELETE
             >;
         };
     };
