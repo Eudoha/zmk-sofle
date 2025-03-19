@@ -144,7 +144,7 @@ layers:
   - {t: /, s: '?'}
   - '*'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&bl BL_INC'
+  - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
   - HOME
   - $$mdi:arrow-up-bold$$
@@ -157,7 +157,7 @@ layers:
   - KP 9
   - {t: '-', s: _}
   - {t: '-', h: _, s: _}
-  - '&bl BL_DEC'
+  - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -170,7 +170,7 @@ layers:
   - KP 6
   - +
   - {t: '[', s: '{'}
-  - '&bl BL_TOG'
+  - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
   - RGB BRD
   - RGB BRI
