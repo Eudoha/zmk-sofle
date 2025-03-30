@@ -27,10 +27,6 @@
     trigger-period-ms = <16>;
 };
 
-&mt {
-    flavor = "tap-preffered";
-};
-
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
