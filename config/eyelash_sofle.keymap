@@ -14,7 +14,7 @@
 
 / {
     behaviors {
-        mt: mod_tap {
+        mt_tap: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -33,26 +33,6 @@
 
             display-name = "Mod-Tap";
             label = "MT_HOLD_PREFER";
-        };
-
-        hml: homewrow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT_HAND";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 60 61 62 63 59>;
-        };
-
-        hmr: homewrow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT_HAND";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57>;
         };
     };
 };
@@ -90,11 +70,11 @@
 
         layer0 {
             bindings = <
-&mt TILDE ESC            &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5    &kp UP_ARROW     &mt CARET NUMBER_6  &mt AMPERSAND N7  &mt ASTERISK N8         &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0      &kp BACKSPACE
-&kp TAB                  &kp Q                     &kp W                 &kp E              &kp R                &kp T             &kp DOWN_ARROW   &kp Y               &kp U             &kp I                   &kp O                    &kp P                         &kp BSLH
-&mt LEFT_SHIFT CAPSLOCK  &hml LEFT_CONTROL A       &hml LEFT_SHIFT S     &hml LEFT_GUI D    &hml LEFT_ALT F      &kp G             &kp LEFT_ARROW   &kp H               &hmr LEFT_ALT J   &hmr LEFT_GUI K         &hmr RIGHT_SHIFT L       &hmr RIGHT_CONTROL SEMICOLON  &mt_hold RIGHT_SHIFT ENTER
-&kp LCTRL                &kp Z                     &kp X                 &kp C              &kp V                &kp B             &kp RIGHT_ARROW  &kp N               &kp M             &mt LEFT_BRACKET COMMA  &mt RBKT PERIOD          &mt QUESTION SLASH            &kp DEL
-&kp C_MUTE               &kp LCTRL                 &kp LEFT_GUI          &kp LEFT_ALT       &kp SPACE            &lt 2 ENTER       &kp ENTER        &lt 1 ENTER         &kp SPACE         &tog 2                  &mt LANGUAGE_2 LANG1     &kp DELETE
+&mt_tap TILDE ESC            &mt_tap EXCLAMATION NUMBER_1  &mt_tap AT_SIGN NUMBER_2  &mt_tap HASH NUMBER_3  &mt_tap DOLLAR NUMBER_4  &mt_tap PERCENT N5    &kp UP_ARROW     &mt_tap CARET NUMBER_6  &mt_tap AMPERSAND N7  &mt_tap ASTERISK N8         &mt_tap LEFT_PARENTHESIS N9  &mt_tap RIGHT_PARENTHESIS N0    &kp BACKSPACE
+&kp TAB                      &kp Q                         &kp W                     &kp E                  &kp R                    &kp T                 &kp DOWN_ARROW   &kp Y                   &kp U                 &kp I                       &kp O                        &kp P                           &kp BSLH
+&mt_tap LEFT_SHIFT CAPSLOCK  &mt_tap LEFT_CONTROL A        &mt_tap LEFT_SHIFT S      &mt_tap LEFT_GUI D     &mt_tap LEFT_ALT F       &kp G                 &kp LEFT_ARROW   &kp H                   &mt_tap LEFT_ALT J    &mt_tap RIGHT_GUI K         &mt_tap RIGHT_SHIFT L        &mt_tap LEFT_CONTROL SEMICOLON  &mt_hold RIGHT_SHIFT ENTER
+&kp LCTRL                    &kp Z                         &kp X                     &kp C                  &kp V                    &kp B                 &kp RIGHT_ARROW  &kp N                   &kp M                 &mt_tap LEFT_BRACKET COMMA  &mt_tap RBKT PERIOD          &mt_tap QUESTION SLASH          &kp DEL
+&kp C_MUTE                   &kp LCTRL                     &kp LEFT_GUI              &kp LEFT_ALT           &kp SPACE                &lt 2 ENTER           &kp ENTER        &lt 1 ENTER             &kp SPACE             &tog 2                      &mt_tap LANGUAGE_2 LANG1     &kp DELETE
             >;
 
             display-name = "LAYER0";
@@ -115,10 +95,10 @@
         Suppl1 {
             display-name = "layer_test";
             bindings = <
-&to 0            &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB5       &kp N7        &kp N8        &kp N9        &kp PLUS             &trans
-&trans           &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt LS(MINUS) MINUS  &mt UNDERSCORE MINUS
-&rgb_ug RGB_HUI  &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_UP       &mmv MOVE_LEFT   &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK         &mt DOUBLE_QUOTES SQT
-&rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp N0        &kp N0        &kp PERIOD    &kp SLASH            &trans
+&to 0            &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB5       &kp N7        &kp N8        &kp N9        &kp PLUS                 &trans
+&trans           &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt_tap LS(MINUS) MINUS  &mt_tap UNDERSCORE MINUS
+&rgb_ug RGB_HUI  &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_UP       &mmv MOVE_LEFT   &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK             &mt_tap DOUBLE_QUOTES SQT
+&rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp N0        &kp N0        &kp PERIOD    &kp SLASH                &trans
 &kp C_MUTE       &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans         &trans        &trans        &trans        &kp EQUAL
             >;
         };
@@ -127,7 +107,7 @@
             display-name = "move / mouse / num / LED";
             bindings = <
 &to 0       &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB4   &mkp MB5         &kp EQUAL        &kp SLASH        &kp ASTERISK  &trans
-&trans      &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &kp PG_UP  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS     &mt UNDERSCORE MINUS
+&trans      &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &kp PG_UP  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS     &mt_tap UNDERSCORE MINUS
 &trans      &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_UP       &mmv MOVE_LEFT   &kp PG_DN  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &kp LEFT_BRACKET
 &trans      &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &mkp RCLK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER     &kp RIGHT_BRACKET
 &kp C_MUTE  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans     &trans           &trans           &kp KP_NUMBER_0  &kp PERIOD
