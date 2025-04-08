@@ -32,9 +32,9 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
   - {t: F, h: '$$mdi:apple-keyboard-option$$'}
-  - G
+  - {t: G, h: No/Fn}
   - $$mdi:arrow-left-bold$$
-  - H
+  - {t: H, h: Navi_Fn}
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: RIGHT GUI}
   - {t: L, h: '$$mdi:apple-keyboard-shift$$'}
@@ -58,14 +58,14 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - layer_test
+  - Navi/LED
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: BT / fn / symbol}
+  - {t: '$$mdi:keyboard-return$$', h: BT / fn}
   - $$mdi:keyboard-space$$
-  - {t: layer_test, h: toggle}
+  - {t: Navi/LED, h: toggle}
   - {t: LANG1, h: LANGUAGE 2}
   - $$mdi:backspace-reverse-outline$$
-  BT / fn / symbol:
+  BT / fn:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., s: '>'}
-  layer_test:
+  Navi/LED:
   - {t: LAYER0, h: toggle}
   - F1
   - F2
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
-  move / mouse / num / LED:
+  No/Fn:
   - {t: LAYER0, h: toggle}
   - F1
   - F2
@@ -203,11 +203,11 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB4'
   - '&mkp MB5'
-  - {t: '=', s: +}
-  - {t: /, s: '?'}
-  - '*'
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - +
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
@@ -216,38 +216,38 @@ layers:
   - END
   - $$mdi:pan-up$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - PG UP
-  - KP 7
-  - KP 8
-  - KP 9
-  - {t: '-', s: _}
+  - '&mkp MB4'
+  - '4'
+  - {t: '5', s: '%'}
+  - '6'
+  - {t: '-', h: Sft+-, s: _}
   - {t: '-', h: _, s: _}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB HUI
   - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:pan-up$$
+  - {type: held}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - PG DN
-  - KP 4
-  - KP 5
-  - KP 6
-  - +
-  - {t: '[', s: '{'}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - {t: '''', h: '"', s: '"'}
+  - RGB HUD
   - RGB TOG
   - RGB BRD
   - RGB BRI
   - $$mdi:pan-left$$
   - $$mdi:pan-right$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-right-click-outline$$
-  - KP 1
-  - KP 2
-  - KP 3
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: ']', s: '}'}
+  - PgDn
+  - {t: '0', s: )}
+  - {t: '0', s: )}
+  - .
+  - {t: /, s: '?'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - RGB EFF
   - RGB SPD
@@ -258,10 +258,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 0
-  - .
-  기존 layer1:
-  - {t: '$$mdi:keyboard-esc$$', s: '`'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
+  Navi_Fn:
+  - {t: LAYER0, h: toggle}
   - F1
   - F2
   - F3
@@ -273,120 +273,55 @@ layers:
   - F8
   - F9
   - F10
+  - F11
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - PG UP
-  - END
-  - $$mdi:arrow-up-bold$$
+  - PgUp
   - HOME
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&bl BL_TOG'
-  - '&bl BL_DEC'
-  - '&bl BL_INC'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - PG DN
+  - $$mdi:arrow-up-bold$$
+  - END
+  - $$mdi:pan-up$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB4'
+  - '4'
+  - {t: '5', s: '%'}
+  - '6'
+  - {t: '-', h: Sft+-, s: _}
+  - F12
+  - RGB HUI
+  - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB TOG
-  - RGB BRI
-  - RGB BRD
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {type: held}
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - {t: '''', h: '"', s: '"'}
   - RGB HUD
-  - RGB HUI
+  - RGB TOG
+  - RGB BRD
+  - RGB BRI
+  - $$mdi:pan-left$$
+  - $$mdi:pan-right$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - RGB SAD
-  - RGB SAI
-  - RGB EFR
-  - RGB EFF
-  - F12
+  - PgDn
+  - {t: '0', s: )}
+  - {t: '0', s: )}
+  - .
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
+  - RGB EFF
+  - RGB SPD
+  - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB4'
-  - '&mkp MB5'
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  LAYER0 b-up:
-  - {t: '`', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-down-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: Sft+1, h: '$$mdi:gesture-tap-hold$$'}
-  - S
-  - D
-  - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:arrow-right-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:alpha-w-box$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
-  - 기존 layer1
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - BT / fn / symbol
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - BT / fn / symbol
-  - LANG1
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
