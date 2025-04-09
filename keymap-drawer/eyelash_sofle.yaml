@@ -229,7 +229,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {type: held}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PgUp
   - '1'
   - '2'
   - '3'
@@ -292,7 +292,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-down$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {type: held}
   - '1'
