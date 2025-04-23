@@ -60,15 +60,15 @@ layers:
   - $$mdi:keyboard-space$$
   - Navi/LED
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: BT / fn}
+  - BT / fn
   - $$mdi:keyboard-space$$
+  - {t: LANG1, h: LANG2}
   - {t: Navi/LED, h: toggle}
-  - {t: LANG1, h: LANGUAGE 2}
   - $$mdi:backspace-reverse-outline$$
   BT / fn:
   - {t: '$$mdi:transfer$$', type: trans}
-  - F1
-  - F2
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - F3
   - F4
   - F5
@@ -155,7 +155,7 @@ layers:
   - '4'
   - {t: '5', s: '%'}
   - '6'
-  - {t: '-', h: Sft+-, s: _}
+  - {t: '-', h: _, s: _}
   - {t: '-', h: _, s: _}
   - RGB HUI
   - PgDn
@@ -220,7 +220,7 @@ layers:
   - '4'
   - {t: '5', s: '%'}
   - '6'
-  - {t: '-', h: Sft+-, s: _}
+  - {t: '-', h: _, s: _}
   - {t: '-', h: _, s: _}
   - RGB HUI
   - PgDn
