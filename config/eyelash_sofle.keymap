@@ -67,71 +67,71 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
+        Default {
             bindings = <
 &mt_tap TILDE ESC            &mt_tap EXCLAMATION NUMBER_1  &mt_tap AT_SIGN NUMBER_2  &mt_tap HASH NUMBER_3  &mt_tap DOLLAR NUMBER_4  &mt_tap PERCENT N5    &kp UP_ARROW     &mt_tap CARET NUMBER_6  &mt_tap AMPERSAND N7  &mt_tap ASTERISK N8         &mt_tap LEFT_PARENTHESIS N9  &mt_tap RIGHT_PARENTHESIS N0    &kp BACKSPACE
 &kp TAB                      &kp Q                         &kp W                     &kp E                  &kp R                    &kp T                 &kp DOWN_ARROW   &kp Y                   &kp U                 &kp I                       &kp O                        &kp P                           &kp BSLH
-&mt_tap LEFT_SHIFT CAPSLOCK  &mt_tap LEFT_CONTROL A        &mt_tap LEFT_SHIFT S      &mt_tap LEFT_GUI D     &mt_tap LEFT_ALT F       &lt 3 G               &kp LEFT_ARROW   &lt 4 H                 &mt_tap LEFT_ALT J    &mt_tap RIGHT_GUI K         &mt_tap RIGHT_SHIFT L        &mt_tap LEFT_CONTROL SEMICOLON  &mt_hold RIGHT_SHIFT ENTER
+&mt_tap LEFT_SHIFT CAPSLOCK  &mt_tap LEFT_CONTROL A        &mt_tap LEFT_SHIFT S      &mt_tap LEFT_GUI D     &mt_tap LEFT_ALT F       &lt 3 G               &kp LEFT_ARROW   &lt 4 H                 &mt_tap LEFT_ALT J    &mt_tap RIGHT_GUI K         &mt_tap RIGHT_SHIFT L        &mt_tap LEFT_CONTROL SEMICOLON  &kp ENTER
 &kp LCTRL                    &kp Z                         &kp X                     &kp C                  &kp V                    &kp B                 &kp RIGHT_ARROW  &kp N                   &kp M                 &mt_tap LEFT_BRACKET COMMA  &mt_tap RBKT PERIOD          &mt_tap QUESTION SLASH          &kp DEL
-&kp C_MUTE                   &kp LCTRL                     &kp LEFT_GUI              &kp LEFT_ALT           &kp SPACE                &mo 2                 &kp ENTER        &mo 1                   &kp SPACE             &mt_tap LANG2 LANG1         &tog 2                       &kp DELETE
+&kp C_MUTE                   &mo 5                         &kp LEFT_GUI              &kp LEFT_ALT           &kp SPACE                &mo 2                 &kp ENTER        &mo 1                   &kp SPACE             &mt_tap LANG2 LANG1         &tog 2                       &mo 5
             >;
 
             display-name = "LAYER0";
         };
 
-        BT,Fn {
+        Fn {
             bindings = <
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_DOWN   &trans  &kp F4  &kp F5  &kp F6  &trans   &kp F12
-&trans      &trans        &trans        &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &kp F1  &kp F2  &kp F3  &trans   &trans
-&trans      &out OUT_TOG  &out OUT_BLE  &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans   &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans  &trans  &kp DOT
+&trans  &mt_tap LC(LS(F1)) F1  &kp F2   &kp F3   &mt LA(F4) F4  &kp F5            &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &kp F4                 &kp F5   &kp F6   &trans         &kp LC(LS(F1))    &mmv MOVE_DOWN   &trans  &kp F4  &kp F5  &kp F6  &trans   &kp F12
+&trans  &kp F7                 &kp F8   &kp F9   &trans         &trans            &mmv MOVE_LEFT   &trans  &kp F1  &kp F2  &kp F3  &trans   &trans
+&trans  &kp F10                &kp F11  &kp F12  &trans         &trans            &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans                 &trans   &trans   &trans         &trans            &mkp LCLK        &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "BT / fn";
+            label = "fn";
         };
 
         main2 {
             display-name = "Navi/LED";
             bindings = <
-&to 0            &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB5       &kp N7        &kp N8        &kp N9        &kp PLUS                  &trans
-&trans           &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt_tap UNDERSCORE MINUS  &mt_tap UNDERSCORE MINUS
-&rgb_ug RGB_HUI  &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_DOWN     &mmv MOVE_LEFT   &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK              &mt_tap DOUBLE_QUOTES SQT
-&rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp N0        &kp N0        &kp PERIOD    &kp SLASH                 &trans
-&kp C_MUTE       &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans         &trans        &trans        &trans        &kp EQUAL
+&to 0       &trans         &trans    &mkp LCLK     &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB5       &kp N7        &kp N8        &kp N9        &kp PLUS                  &trans
+&trans      &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt_tap UNDERSCORE MINUS  &mt_tap UNDERSCORE MINUS
+&trans      &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT       &msc SCRL_DOWN     &mmv MOVE_LEFT   &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK              &mt_tap DOUBLE_QUOTES SQT
+&trans      &trans         &trans    &trans        &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp N0        &kp N0        &kp PERIOD    &kp SLASH                 &trans
+&kp C_MUTE  &trans         &trans    &trans        &trans          &trans             &mkp LCLK        &trans         &trans        &trans        &trans        &kp EQUAL
             >;
         };
 
         G_layer {
             display-name = "No/Fn";
             bindings = <
-&to 0            &kp F1           &kp F2           &mkp LCLK        &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB5       &kp N7        &kp N8        &kp N9        &kp PLUS             &trans
-&trans           &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt_tap UNDER MINUS  &mt_tap UNDERSCORE MINUS
-&rgb_ug RGB_HUI  &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &trans             &mmv MOVE_LEFT   &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK         &mt_tap DOUBLE_QUOTES SQT
-&rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp N0        &kp N0        &kp PERIOD    &kp SLASH            &trans
-&kp C_MUTE       &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans         &trans        &trans        &trans        &kp EQUAL
+&to 0       &trans         &trans    &mkp LCLK     &mkp MCLK  &mkp RCLK       &mmv MOVE_UP     &mkp MB5       &kp N7        &kp N8        &kp N9        &kp PLUS             &trans
+&trans      &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &msc SCRL_UP    &mmv MOVE_DOWN   &mkp MB4       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt_tap UNDER MINUS  &mt_tap UNDERSCORE MINUS
+&trans      &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans          &mmv MOVE_LEFT   &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK         &mt_tap DOUBLE_QUOTES SQT
+&trans      &trans         &trans    &trans        &trans     &trans          &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp N0        &kp N0        &kp PERIOD    &kp SLASH            &trans
+&kp C_MUTE  &trans         &trans    &trans        &trans     &trans          &mkp LCLK        &trans         &trans        &trans        &trans        &kp EQUAL
             >;
         };
 
         H_layer {
             display-name = "Navi_Fn";
             bindings = <
-&to 0            &kp F1           &kp F2           &kp F3           &kp F4          &kp F5             &mmv MOVE_UP     &kp F6         &kp F7        &kp F8        &kp F9        &kp F10                  &kp F11
-&trans           &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt_tap LS(MINUS) MINUS  &kp F12
-&rgb_ug RGB_HUI  &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT       &msc SCRL_DOWN     &mmv MOVE_LEFT   &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK             &mt_tap DOUBLE_QUOTES SQT
-&rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp N0        &kp N0        &kp PERIOD    &kp SLASH                &trans
-&kp C_MUTE       &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &trans             &mkp LCLK        &trans         &trans        &trans        &trans        &kp EQUAL
+&to 0       &kp F1         &kp F2    &kp F3        &kp F4          &kp F5             &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans      &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans   &kp F12
+&trans      &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT       &msc SCRL_DOWN     &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans   &trans
+&trans      &trans         &trans    &trans        &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans   &trans
+&kp C_MUTE  &trans         &trans    &trans        &trans          &trans             &mkp LCLK        &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_5 {
-            label = "BT / fn";
+        SYSTEM {
+            label = "SYSTEM";
             bindings = <
-&trans      &bt BT_SEL 0  &bt BT_SEL 1  &kp F3        &kp F4        &kp F5          &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_DOWN   &trans  &kp F4  &kp F5  &kp F6  &trans   &kp F12
-&trans      &trans        &trans        &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &kp F1  &kp F2  &kp F3  &trans   &trans
-&trans      &out OUT_TOG  &out OUT_BLE  &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans   &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans  &trans  &kp DOT
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans  &trans
+&out OUT_TOG     &trans           &trans           &trans           &trans           &trans             &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF    &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR    &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans           &trans           &trans           &trans           &trans             &kp C_MUTE         &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
