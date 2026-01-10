@@ -143,7 +143,7 @@
             bindings = <
 &kp ESC                &kp N1                &kp N2              &kp N3            &kp N4            &kp N5            &kp UP_ARROW     &kp N6           &kp N7               &kp N8                  &kp N9                    &kp N0                        &kp BACKSPACE
 &kp TAB                &kp Q                 &kp W               &kp E             &kp R             &kp T             &kp DOWN_ARROW   &kp Y            &kp U                &kp I                   &kp O                     &kp P                         &kp BSLH
-&hrow LEFT_SHIFT CAPS  &hrow LEFT_CONTROL A  &hrow LEFT_SHIFT S  &hrow LEFT_GUI D  &hrow LEFT_ALT F  &lt 3 G           &kp LEFT_ARROW   &kp H            &hrow LEFT_ALT J     &hrow LEFT_GUI K        &hrow LEFT_SHIFT L        &hrow LEFT_CONTROL SEMICOLON  &kp ENTER
+&hrow LEFT_SHIFT CAPS  &hrow LEFT_CONTROL A  &hrow LEFT_SHIFT S  &hrow LEFT_GUI D  &hrow LEFT_ALT F  &lt 0 G           &kp LEFT_ARROW   &kp H            &hrow LEFT_ALT J     &hrow LEFT_GUI K        &hrow LEFT_SHIFT L        &hrow LEFT_CONTROL SEMICOLON  &kp ENTER
 &kp LCTRL              &kp Z                 &kp X               &kp C             &kp V             &kp B             &kp RIGHT_ARROW  &kp N            &kp M                &mt LEFT_BRACKET COMMA  &mt RIGHT_BRACKET PERIOD  &mt LS(SLASH) SLASH           &kp DEL
 &none                  &mo 5                 &kp LEFT_GUI        &kp LEFT_ALT      &kp SPACE         &kp LEFT_SHIFT    &kp ENTER        &lt 1 RIGHT_ALT  &hold_layer 2 SPACE  &none                   &tog 2                    &mo 5
             >;
@@ -153,11 +153,11 @@
 
         Function_layer {
             bindings = <
-&trans  &none    &kp F2   &kp F3   &mt LA(F4) F4  &kp F5            &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans  &kp F4   &kp F5   &kp F6   &trans         &kp LC(LS(F1))    &mmv MOVE_DOWN   &trans  &kp F4  &kp F5  &kp F6  &trans   &kp F12
-&trans  &kp F7   &kp F8   &kp F9   &trans         &trans            &mmv MOVE_LEFT   &trans  &kp F1  &kp F2  &kp F3  &trans   &trans
-&trans  &kp F10  &kp F11  &kp F12  &trans         &trans            &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans   &trans   &trans   &trans         &trans            &mkp LCLK        &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &mt LC(LS(F1)) F1  &kp F2  &kp F3  &mt LA(F4) F4         &kp F5                   &mmv MOVE_UP     &kp F6             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans      &trans             &trans  &trans  &trans                &trans                   &mmv MOVE_DOWN   &trans             &kp F4  &kp F5  &kp F6  &trans   &kp F12
+&trans      &trans             &trans  &trans  &trans                &trans                   &mmv MOVE_LEFT   &kp LEFT_BRACKET   &kp F1  &kp F2  &kp F3  &trans   &trans
+&trans      &trans             &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans   &trans
+&trans      &trans             &trans  &trans  &trans                &trans                   &mkp LCLK        &trans             &trans  &trans  &trans  &trans
             >;
 
             label = "FUNC";
@@ -166,22 +166,21 @@
         number_layer {
             display-name = "NUM";
             bindings = <
-&to 0       &trans         &trans    &mkp LCLK     &mkp MCLK       &mkp RCLK          &mmv MOVE_UP     &mkp MB5       &kp N7        &kp N8        &kp N9        &kp PLUS      &trans
-&trans      &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END         &msc SCRL_UP       &mmv MOVE_DOWN   &mkp MB4       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &none
-&trans      &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT       &msc SCRL_DOWN     &mmv MOVE_LEFT   &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &none
-&trans      &trans         &trans    &trans        &msc SCRL_LEFT  &msc SCRL_RIGHT    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp N0        &kp N0        &kp PERIOD    &kp SLASH     &trans
-&kp C_MUTE  &trans         &trans    &trans        &trans          &trans             &mkp LCLK        &trans         &trans        &trans        &trans        &kp EQUAL
+&to 0       &kp N1         &kp N2    &kp N3        &kp N4                &kp N5                   &mmv MOVE_UP     &kp N6             &kp N7        &kp N8        &kp N9        &kp PLUS              &trans
+&trans      &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END               &kp PAGE_UP              &mmv MOVE_DOWN   &trans             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt UNDERSCORE MINUS  &mt UNDERSCORE MINUS
+&trans      &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT             &kp PAGE_DOWN            &mmv MOVE_LEFT   &kp LEFT_BRACKET   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK          &kp SQT
+&trans      &trans         &trans    &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp N0        &kp N0        &kp PERIOD    &kp SLASH             &trans
+&kp C_MUTE  &trans         &trans    &trans        &trans                &trans                   &mkp LCLK        &trans             &trans        &trans        &trans        &mt EQUAL ENTER
             >;
         };
 
-        System_layer {
-            display-name = "SYS";
+        G_num_layer {
             bindings = <
-&to 0       &trans         &trans    &mkp LCLK     &mkp MCLK  &mkp RCLK       &mmv MOVE_UP     &mkp MB5       &kp N7        &kp N8        &kp N9        &kp PLUS      &trans
-&trans      &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &msc SCRL_UP    &mmv MOVE_DOWN   &mkp MB4       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &none
-&trans      &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans          &mmv MOVE_LEFT   &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &none
-&trans      &trans         &trans    &trans        &trans     &trans          &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp N0        &kp N0        &kp PERIOD    &kp SLASH     &trans
-&kp C_MUTE  &trans         &trans    &trans        &trans     &trans          &mkp LCLK        &trans         &trans        &trans        &trans        &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N6             &kp N7  &kp N8  &kp N9   &kp LSHFT             &kp N6
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &kp N4  &kp N5  &kp N6   &mt UNDERSCORE MINUS  &mt UNDERSCORE MINUS
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_BRACKET   &kp N1  &kp N2  &kp N3   &kp ASTRK             &kp SQT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RIGHT_BRACKET  &kp N0  &kp N0  &kp DOT  &kp FSLH              &kp ENTER
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans  &trans  &trans   &mt EQUAL ENTER
             >;
         };
 
