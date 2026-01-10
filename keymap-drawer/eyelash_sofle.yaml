@@ -393,7 +393,7 @@ layers:
 combos:
 - p: [28, 29, 30]
   k: {t: NUM, h: toggle}
-- p: [34, 35, 36]
+- p: [47, 48, 49]
   k: {t: QWERTY, h: toggle}
 - p: [14, 15, 16]
   k: Meh+Q
