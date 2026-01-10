@@ -53,7 +53,7 @@ layers:
   - {t: ., h: ']'}
   - {t: /, h: '?', s: '?'}
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - SYSTEM
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
