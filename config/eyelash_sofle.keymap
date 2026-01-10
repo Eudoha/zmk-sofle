@@ -145,7 +145,7 @@
 &kp TAB                &kp Q                 &kp W               &kp E             &kp R             &kp T             &kp DOWN_ARROW   &kp Y            &kp U                &kp I                   &kp O                     &kp P                         &kp BSLH
 &hrow LEFT_SHIFT CAPS  &hrow LEFT_CONTROL A  &hrow LEFT_SHIFT S  &hrow LEFT_GUI D  &hrow LEFT_ALT F  &lt 3 G           &kp LEFT_ARROW   &kp H            &hrow LEFT_ALT J     &hrow LEFT_GUI K        &hrow LEFT_SHIFT L        &hrow LEFT_CONTROL SEMICOLON  &kp ENTER
 &kp LCTRL              &kp Z                 &kp X               &kp C             &kp V             &kp B             &kp RIGHT_ARROW  &kp N            &kp M                &mt LEFT_BRACKET COMMA  &mt RIGHT_BRACKET PERIOD  &mt LS(SLASH) SLASH           &kp DEL
-&none                  &mo 4                 &kp LEFT_GUI        &kp LEFT_ALT      &kp SPACE         &kp LEFT_SHIFT    &kp ENTER        &lt 1 RIGHT_ALT  &hold_layer 2 SPACE  &kp ENTER               &tog 2                    &mo 4
+&none                  &mo 4                 &kp LEFT_GUI        &kp LEFT_ALT      &kp SPACE         &kp LEFT_SHIFT    &kp ENTER        &lt 1 RIGHT_ALT  &hold_layer 2 SPACE  &kp ENTER               &none                     &mo 4
             >;
 
             display-name = "QWERTY";
