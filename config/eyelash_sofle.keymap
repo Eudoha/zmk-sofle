@@ -74,7 +74,7 @@
 
         to_default_layer {
             bindings = <&to 0>;
-            key-positions = <47 48 49>;
+            key-positions = <34 35 36>;
         };
 
         end_remote {
@@ -141,11 +141,11 @@
 
         Default {
             bindings = <
-&kp ESC                &kp N1                &kp N2              &kp N3            &kp N4            &kp N5            &kp UP_ARROW     &kp N6           &kp N7               &kp N8                  &kp N9                    &kp N0                        &kp BACKSPACE
-&kp TAB                &kp Q                 &kp W               &kp E             &kp R             &kp T             &kp DOWN_ARROW   &kp Y            &kp U                &kp I                   &kp O                     &kp P                         &kp BSLH
-&hrow LEFT_SHIFT CAPS  &hrow LEFT_CONTROL A  &hrow LEFT_SHIFT S  &hrow LEFT_GUI D  &hrow LEFT_ALT F  &lt 3 G           &kp LEFT_ARROW   &kp H            &hrow LEFT_ALT J     &hrow LEFT_GUI K        &hrow LEFT_SHIFT L        &hrow LEFT_CONTROL SEMICOLON  &kp ENTER
-&kp LCTRL              &kp Z                 &kp X               &kp C             &kp V             &kp B             &kp RIGHT_ARROW  &kp N            &kp M                &mt LEFT_BRACKET COMMA  &mt RIGHT_BRACKET PERIOD  &mt LS(SLASH) SLASH           &kp DEL
-&none                  &mo 4                 &kp LEFT_GUI        &kp LEFT_ALT      &kp SPACE         &kp LEFT_SHIFT    &kp ENTER        &lt 1 RIGHT_ALT  &hold_layer 2 SPACE  &kp ENTER               &none                     &mo 4
+&kp ESC                &kp N1                &kp N2              &kp N3            &cls_win          &kp N5                          &kp UP_ARROW     &kp N6           &kp N7               &kp N8                  &kp N9                    &kp N0                        &kp BACKSPACE
+&kp TAB                &kp Q                 &kp W               &kp E             &kp R             &kp T                           &kp DOWN_ARROW   &kp Y            &kp U                &kp I                   &kp O                     &kp P                         &kp BSLH
+&hrow LEFT_SHIFT CAPS  &hrow LEFT_CONTROL A  &hrow LEFT_SHIFT S  &hrow LEFT_GUI D  &hrow LEFT_ALT F  &lt 3 G                         &kp LEFT_ARROW   &kp H            &hrow LEFT_ALT J     &hrow LEFT_GUI K        &hrow LEFT_SHIFT L        &hrow LEFT_CONTROL SEMICOLON  &kp ENTER
+&kp LCTRL              &kp Z                 &kp X               &kp C             &kp V             &kp B                           &kp RIGHT_ARROW  &kp N            &kp M                &mt LEFT_BRACKET COMMA  &mt RIGHT_BRACKET PERIOD  &mt LS(SLASH) SLASH           &kp DEL
+&none                  &kp LEFT_GUI          &kp LEFT_ALT        &kp SQT           &kp SPACE         &mt LEFT_SHIFT RIGHT_CONTROL    &kp ENTER        &lt 1 RIGHT_ALT  &hold_layer 2 SPACE  &kp ENTER               &none                     &mo 4
             >;
 
             display-name = "QWERTY";
@@ -168,19 +168,19 @@
             bindings = <
 &to 0       &kp N1         &kp N2    &kp N3        &kp N4                &kp N5                   &mmv MOVE_UP     &kp N6             &kp N7        &kp N8        &kp N9        &kp PLUS              &trans
 &trans      &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END               &kp PAGE_UP              &mmv MOVE_DOWN   &trans             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt UNDERSCORE MINUS  &mt UNDERSCORE MINUS
-&trans      &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT             &kp PAGE_DOWN            &mmv MOVE_LEFT   &kp LEFT_BRACKET   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK          &kp SQT
+&trans      &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT             &kp PAGE_DOWN            &mmv MOVE_LEFT   &kp LEFT_BRACKET   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK          &trans
 &trans      &trans         &trans    &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp N0        &kp N0        &kp PERIOD    &kp SLASH             &trans
-&kp C_MUTE  &trans         &trans    &trans        &trans                &trans                   &mkp LCLK        &trans             &trans        &trans        &trans        &mt EQUAL ENTER
+&kp C_MUTE  &trans         &trans    &trans        &trans                &trans                   &mkp LCLK        &trans             &trans        &trans        &trans        &kp EQUAL
             >;
         };
 
         G_num_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N6             &kp N7  &kp N8  &kp N9   &kp LSHFT             &kp N6
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N6             &kp N7  &kp N8  &kp N9   &kp PLUS              &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &kp N4  &kp N5  &kp N6   &mt UNDERSCORE MINUS  &mt UNDERSCORE MINUS
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_BRACKET   &kp N1  &kp N2  &kp N3   &kp ASTRK             &kp SQT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_BRACKET   &kp N1  &kp N2  &kp N3   &kp ASTRK             &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RIGHT_BRACKET  &kp N0  &kp N0  &kp DOT  &kp FSLH              &kp ENTER
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans  &trans  &trans   &mt EQUAL ENTER
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans  &trans  &trans   &kp EQUAL
             >;
         };
 
